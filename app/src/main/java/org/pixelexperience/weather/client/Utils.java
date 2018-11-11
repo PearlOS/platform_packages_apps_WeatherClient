@@ -33,21 +33,7 @@ public class Utils {
         if (pm != null && !pm.hasSystemFeature("org.pixelexperience.weather.client.SUPPORTED")) {
             return false;
         }
-        if (getSystemProperty("org.pixelexperience.version", "").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.build_date", "").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.build_type", "").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.fingerprint", "").isEmpty()) {
-            return false;
-        }
-        if (getSystemProperty("org.pixelexperience.device", "").isEmpty()) {
-            return false;
-        }
+
         return true;
     }
 
